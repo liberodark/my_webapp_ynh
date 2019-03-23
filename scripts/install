@@ -33,7 +33,6 @@ app_nb=$YNH_APP_INSTANCE_NUMBER
 #=================================================
 
 final_path=/var/www/$app
-test ! -e "$final_path" || ynh_die "This path already contains a folder"
 
 # Check password strength
 [[ ${#password} -gt 5 ]] || ynh_die \
